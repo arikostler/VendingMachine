@@ -1,0 +1,21 @@
+{
+  "name": "vending-machine",
+  "version": "1.0.0",
+  "description": "Vending machine program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello Test!\"",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "mysql": "2.17.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {},
+  "author": "Arik Ostler",
+  "license": "ISC"
+}

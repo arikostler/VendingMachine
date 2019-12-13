@@ -1,0 +1,14 @@
+body {
+    background-color: lightgray;
+}
+
+.soda-icon {
+    width: 180px;
+    height: 100px;
+}
+
+.soda-button {
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: center;
+}

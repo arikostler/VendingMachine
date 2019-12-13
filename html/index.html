@@ -1,0 +1,82 @@
+<!--  Created by IntelliJ IDEA.-->
+<!--  User: arik-->
+<!--  Date: 12/10/19-->
+<!--  Time: 6:54 PM-->
+<!--  To change this template use File | Settings | File Templates.-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="/resources/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Vending Machine</title>
+    <script src="/resources/jquery/dist/jquery.js"></script>
+    <script src="/resources/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 rounded-top"
+             style="background-color: lightgreen; border: 2px solid black; border-bottom: 1px solid black;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col" style="text-align: center;">
+                        <h1>Soda Machine</h1>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row"
+         style="background-color: lightgreen; border-right: 2px solid black; border-left: 2px solid black; padding-top: 5px; padding-bottom: 5px;">
+        <div class="col-4 text-hide" style="text-align: center; padding-top: 10px;">
+            <p>25 cents a pop</p>
+        </div>
+        <div class="col-4" style="text-align: center">
+            <div class="btn btn-info">
+                Inserted: <span id="amt">$ 0.00</span>
+            </div>
+        </div>
+        <div class="col-4" style="text-align: center;">
+            <div class="btn btn-info" id="coin-return" onclick="returnCoins()">Return Coins</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 rounded-bottom"
+             style="background-color: lightblue; border: 2px solid black; border-top:1px solid black">
+            <div class="container-fluid">
+                <div class="row" style="padding-bottom: 20px; padding-top: 20px;">
+                    <div class="col">
+                        <button class="btn btn-outline-secondary soda-button" onclick="getSoda('Sprite')" type="button">
+                            <img alt="Sprite" class="rounded-circle soda-icon" src="cdn/img/sprite.jpg">
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary soda-button" onclick="getSoda('Coca Cola')"
+                                type="button">
+                            <img alt="Coca-Cola" class="rounded-circle soda-icon" src="cdn/img/coca-cola.jpg">
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary soda-button" onclick="getSoda('7Up')" type="button">
+                            <img alt="7 UP" class="rounded-circle soda-icon" src="cdn/img/7up.jpg">
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary soda-button" onclick="getSoda('Dr Pepper')"
+                                type="button">
+                            <img alt="Dr Pepper" class="rounded-circle soda-icon" src="cdn/img/dr-pepper.jpg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-secondary" onclick="addQuarter()" type="button">+</button>
+    </div>
+</div>
+</body>
+</html>
